@@ -1,81 +1,29 @@
-<!-- <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid de 3 Columnas</title>
-    <link rel="stylesheet" href="styles.css"></head> Enlaza tu CSS externo -->
-
-<!--<body> 
+    <link rel="stylesheet" href="styles.css"></head>
+<body> 
     <header>Bienvenido a tlachtli.com</header>
-    <div class="container">
-        <div class="card">Elemento 1</div>
-        <div class="card">Elemento 2</div>
-        <div class="card">Elemento 3</div>
-        <div class="card">Elemento 4</div>
-        <div class="card">Elemento 5</div>
-        <div class="card">Elemento 6</div>
-        <div class="card">Elemento 7</div>
-        <div class="card">Elemento 8</div>
-        <div class="card">Elemento 9</div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <iframe src="https://scratch.mit.edu/projects/1070084348/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="grid-item">
+            <iframe src="https://scratch.mit.edu/projects/1087556525/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="grid-item">
+            <iframe src="https://scratch.mit.edu/projects/1071636967/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="grid-item">Elemento 4</div>
+        <div class="grid-item">Elemento 5</div>
+        <div class="grid-item">Elemento 6</div>
+        <div class="grid-item">Elemento 7</div>
+        <div class="grid-item">Elemento 8</div>
+        <div class="grid-item">Elemento 9</div>
     </div>
-</body>
-</html> -->
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juegos Educativos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100">
-    <header class="bg-blue-600 text-white py-4 text-center text-2xl font-bold shadow-lg">
-        Juegos Educativos
-    </header>
-    
-    <main class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
-        <div class="card bg-white p-4 rounded-lg shadow cursor-pointer" onclick="openModal('game1')">
-            <h3 class="text-lg font-semibold">Juego 1</h3>
-            <p class="text-gray-600">Descripción breve del juego.</p>
-        </div>
-        <div class="card bg-white p-4 rounded-lg shadow cursor-pointer" onclick="openModal('game2')">
-            <h3 class="text-lg font-semibold">Juego 2</h3>
-            <p class="text-gray-600">Descripción breve del juego.</p>
-        </div>
-        <div class="card bg-white p-4 rounded-lg shadow cursor-pointer" onclick="openModal('game3')">
-            <h3 class="text-lg font-semibold">Juego 3</h3>
-            <p class="text-gray-600">Descripción breve del juego.</p>
-        </div>
-    </main>
-
-    <!-- Modal -->
-    <div id="gameModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full relative">
-            <button class="absolute top-2 right-2 text-gray-600" onclick="closeModal()">✖</button>
-            <h2 class="text-xl font-bold mb-4" id="modalTitle">Juego</h2>
-            <iframe id="gameFrame" class="w-full h-64" src="" frameborder="0"></iframe>
-        </div>
-    </div>
-
-    <script>
-        function openModal(game) {
-            const games = {
-                'game1': 'https://example.com/game1',
-                'game2': 'https://example.com/game2',
-                'game3': 'https://example.com/game3'
-            };
-            
-            document.getElementById('modalTitle').innerText = game;
-            document.getElementById('gameFrame').src = games[game];
-            document.getElementById('gameModal').classList.remove('hidden');
-        }
-        
-        function closeModal() {
-            document.getElementById('gameModal').classList.add('hidden');
-            document.getElementById('gameFrame').src = '';
-        }
-    </script>
 </body>
 </html>
+
